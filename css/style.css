@@ -1,0 +1,616 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+
+}
+
+.master {
+    overflow-x: hidden;
+}
+
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    position: fixed;
+    box-shadow: 2px 0, 0, 3;
+    z-index: 1;
+}
+
+.banner_menu {
+    
+    display: flex;
+    width: 100%;
+    height: 40px;
+    justify-content: space-around;
+    background-color: rgb(236, 170, 83);
+
+}
+
+.banner_contato li {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.banner_contato a {
+    text-decoration: none;
+    color: white;
+}
+
+.banner_contato a:hover {
+    color: black;
+}
+
+.title_pg {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.title_pg a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.title_pg a:hover {
+    color: black;
+}
+
+ul li {
+    list-style: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 40px;
+}
+
+.nav_menu {
+    width: 100vw;
+    height: 25px;
+    background-color: black;
+
+}
+
+.nav_ul {
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+.text_nav {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.text_nav:hover {
+    color: burlywood;
+    border-bottom: 2px solid white;
+}
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+}
+
+.container_img {
+    background-image: url('/assest/img/CREEPYPASTA.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 630px;
+
+}
+
+.bg_container {
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 630px;
+
+}
+
+.text_container {
+    color: burlywood;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.label_container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    line-height: 20px;
+}
+
+.section_contéudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    background-color: burlywood;
+
+}
+
+.title_section {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 40px;
+
+}
+
+.text_section {
+    width: 400px;
+    font-style: italic;
+}
+
+.histórias_section {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    padding-top: 20px;
+    gap: 100px;
+
+
+}
+
+.histórias_section img {
+    width: 600px;
+    border-radius: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.section_contéudo_black {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    background-color: black;
+    font-weight: bolder;
+
+}
+
+.title_section_black {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 40px;
+}
+
+.text_section_black {
+    width: 400px;
+    color: white;
+    font-style: italic;
+}
+
+.histórias_section_black {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    padding-top: 20px;
+    gap: 100px;
+
+
+}
+
+.histórias_section_black img {
+    width: 600px;
+    border-radius: 10px;
+
+}
+
+
+.hidden {
+    opacity: 0;
+}
+
+.show {
+    opacity: 1;
+
+}
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    transition: all 2s;
+}
+
+
+
+
+
+
+
+.sobre_contéudo_black {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 600px;
+    background-image: url('https://4.bp.blogspot.com/-64-n3dEEp_A/VjT3nasnZII/AAAAAAAAAWg/CQXwWlw5caE/s1600/creepypastas-top-10.png');
+    font-weight: bolder;
+
+}
+
+.sobre_pg_black {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+
+.text_sobre_pg {
+    width: 800px;
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+.footer_pg {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 100px;
+
+}
+
+.text_footer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+
+}
+
+.footer_pg p {
+    font-style: italic;
+}
+
+
+
+
+.text_footer ion-icon {
+    color: yellow;
+
+}
+
+
+
+
+
+#sasquatch_button {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+#sasquatch_button:hover {
+    color: blue;
+}
+
+
+#rake_button {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+#rake_button:hover{
+    color: blue;
+}
+
+
+#ness_button {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+#ness_button:hover{
+    color: blue;
+}
+
+#jeff_button {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+#jeff_button:hover{
+    color: blue;
+}
+
+#slenderman_button {
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+}
+
+#slenderman_button:hover{
+    color: blue;
+}
+
+
+
+
+
+
+.show_box{
+    display: none;
+}
+
+
+.sasquatch_show{
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9 );
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:1000;
+}
+
+
+.sasquatch_show label{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    width: 60vw;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.text_show p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 800px;
+    line-height: 19px;
+}
+
+
+
+
+
+
+
+
+
+.show_box2{
+    display: none;
+}
+
+
+.rake_show{
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9 );
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:1000;
+}
+
+
+.rake_show label{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    width: 60vw;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.text_show2 p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 800px;
+    line-height: 19px;
+}
+
+
+
+
+
+
+.show_box3{
+    display: none;
+}
+
+
+.ness_show{
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9 );
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:1000;
+}
+
+
+.ness_show label{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    width: 60vw;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 490px;
+}
+
+.text_show3{
+    width: 90%;
+}
+
+.text_show3 p{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    line-height: 20px;
+    
+}
+
+
+
+.show_box4{
+    display: none;
+}
+
+
+.jeff_show{
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9 );
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:1000;
+}
+
+
+.jeff_show label{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    width: 60vw;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 490px;
+}
+
+.text_show4{
+    width: 90%;
+}
+
+.text_show4 p{
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    line-height: 20px;
+    
+}
+
+
+
+
+.show_box5{
+    display: none;
+}
+
+
+.slanderman_show{
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.9 );
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index:1000;
+}
+
+
+.slanderman_show label{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    width: 60vw;
+    height: 40px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.text_show5 p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    width: 800px;
+    line-height: 28 px;
+}
